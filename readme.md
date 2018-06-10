@@ -33,7 +33,10 @@ new Router([
     // Add a method called 'only' to make sure code only runs on a page with the array of classes.
     {
         code: () => {
+		
+	    // Code!
 	    console.log('Home page!');
+	    
 	},
 	only: ['home']
     },
@@ -41,7 +44,10 @@ new Router([
     // Add a method called 'except' to make sure code runs on all pages except those in the array of classes.
     {
 	code: () => {
+	
+	    // Code!
 	    console.log('Global except the about and contact page!');
+	    
 	},
 	except: ['about', 'contact']
     },
@@ -49,7 +55,10 @@ new Router([
     // By not adding 'only' or 'except' method, anycode inside here will run on all pages.
     {
 	code: () => {
+		
+	    // Code!
 	    console.log('Home page!');
+	    
 	},
 	only: ['home']
     }
