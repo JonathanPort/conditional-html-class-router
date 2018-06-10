@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body class="body page--home">
+
+	<h1>ConditionalHTMLClassRouter.test</h1>
+
+	<script src="dist/ConditionalHTMLClassRouter.js"></script>
+
+
+	<script type="text/javascript">
+
+		var prefix = 'page--',
+			classElem = '.body';
+
+		new ConditionalHTMLClassRouter([
+
+			{
+				code: () => {
+					console.log('Hello, world!');
+				},
+				only: ['home']
+			}
+
+		], prefix, classElem);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "conditional-html-class-router",
+  "version": "1.0.0",
+  "description": "A lightweight (Only 1.2kb before GZip) ES6 component that can be used to route specific code to specific pages based on the current page class. You can choose what element you want it to pick the class up from and also what prefix for that class e.g. `body.page--`.",
+  "main": "dist/ConditionalHTMLClassRouter.js",
+  "scripts": {
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanport/conditional-html-class-router.git"
+  },
+  "keywords": [
+    "class",
+    "HTML",
+    "router",
+    "conditional"
+  ],
+  "author": "Jonathan Port @jfreemanport",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanport/conditional-html-class-router/issues"
+  },
+  "homepage": "https://github.com/jonathanport/conditional-html-class-router#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1"
+  }
+}
