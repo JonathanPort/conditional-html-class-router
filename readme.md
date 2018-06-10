@@ -26,33 +26,33 @@ const Router = require('conditional-html-class-router');
 ```JavaScript
 
 let prefix = 'page--',    // Optional. Default is 'page--'. Can be empty but not recommended.
-	classElem = '.body';  // Optional. Default is 'body'.
+    classElem = '.body';  // Optional. Default is 'body'.
 
 new Router([
 
-	// Add a method called 'only' to make sure code only runs on a page with the array of classes.
-	{
-		code: () => {
-			console.log('Home page!');
-		},
-		only: ['home']
+    // Add a method called 'only' to make sure code only runs on a page with the array of classes.
+    {
+        code: () => {
+	    console.log('Home page!');
 	},
+	only: ['home']
+    },
 
-	// Add a method called 'except' to make sure code runs on all pages except those in the array of classes.
-	{
-		code: () => {
-			console.log('Global except the about and contact page!');
-		},
-		except: ['about', 'contact']
+    // Add a method called 'except' to make sure code runs on all pages except those in the array of classes.
+    {
+	code: () => {
+	    console.log('Global except the about and contact page!');
 	},
+	except: ['about', 'contact']
+    },
 
-	// By not adding 'only' or 'except' method, anycode inside here will run on all pages.
-	{
-		code: () => {
-			console.log('Home page!');
-		},
-		only: ['home']
+    // By not adding 'only' or 'except' method, anycode inside here will run on all pages.
+    {
+	code: () => {
+	    console.log('Home page!');
 	},
+	only: ['home']
+    }
 
 ], prefix, classElem);
 ```
