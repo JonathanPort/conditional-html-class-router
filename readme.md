@@ -59,8 +59,7 @@ new Router([
 	    // Code!
 	    console.log('Home page!');
 	    
-	},
-	only: ['home']
+	}
     }
 
 ], prefix, classElem);
